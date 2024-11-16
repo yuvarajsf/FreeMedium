@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Read Medium Free",
+    "version": "1.0",
+    "description": "This extension will help to read premium Medium posts for free.",
+    "icons": {
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://*.medium.com/*"
+        ],
+        "js": [
+          "plugin.js"
+        ]
+      }
+    ]
+}
